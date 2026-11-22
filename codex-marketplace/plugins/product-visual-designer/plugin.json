@@ -1,0 +1,23 @@
+{
+  "name": "product-visual-designer",
+  "version": "1.0.0",
+  "description": "Turn product intent into usable flows, coherent interfaces, and clear handoff.",
+  "license": "MIT",
+  "skills": "./skills",
+  "interface": {
+    "displayName": "Product/Visual Designer",
+    "shortDescription": "Turn product intent into usable flows, coherent interfaces, and clear handoff.",
+    "category": "Productivity",
+    "capabilities": [
+      "Coherent user flows",
+      "Distinct visual direction",
+      "Actionable critique",
+      "Implementation-ready handoff"
+    ],
+    "defaultPrompt": [
+      "Map the best onboarding flow for this PRD and research summary.",
+      "Critique these dashboard frames before engineering handoff."
+    ],
+    "brandColor": "#2E8B63"
+  }
+}

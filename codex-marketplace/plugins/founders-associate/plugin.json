@@ -1,0 +1,23 @@
+{
+  "name": "founders-associate",
+  "version": "1.0.0",
+  "description": "Turn scattered context into decisions, briefs, and owned follow-through.",
+  "license": "MIT",
+  "skills": "./skills",
+  "interface": {
+    "displayName": "Founder’s Associate",
+    "shortDescription": "Turn scattered context into decisions, briefs, and owned follow-through.",
+    "category": "Productivity",
+    "capabilities": [
+      "Sharper executive decisions",
+      "Useful meeting follow-through",
+      "Research that changes action",
+      "Visible initiative ownership"
+    ],
+    "defaultPrompt": [
+      "Turn these notes into a decision memo for tomorrow’s founder meeting.",
+      "Convert this weekly meeting transcript into an owned action plan."
+    ],
+    "brandColor": "#2E8B63"
+  }
+}

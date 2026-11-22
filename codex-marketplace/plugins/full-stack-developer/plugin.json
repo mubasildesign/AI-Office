@@ -1,0 +1,23 @@
+{
+  "name": "full-stack-developer",
+  "version": "1.0.0",
+  "description": "Plan, implement, debug, review, and verify production software.",
+  "license": "MIT",
+  "skills": "./skills",
+  "interface": {
+    "displayName": "Full-Stack Developer",
+    "shortDescription": "Plan, implement, debug, review, and verify production software.",
+    "category": "Productivity",
+    "capabilities": [
+      "Decision-complete technical plans",
+      "Focused implementation",
+      "Evidence-backed debugging",
+      "Useful review and tests"
+    ],
+    "defaultPrompt": [
+      "Plan and implement the export endpoint described in this issue.",
+      "Diagnose why this test fails only in CI."
+    ],
+    "brandColor": "#2E8B63"
+  }
+}

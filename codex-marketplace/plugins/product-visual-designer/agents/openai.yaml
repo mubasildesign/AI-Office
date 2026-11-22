@@ -1,0 +1,11 @@
+interface:
+  display_name: "Product/Visual Designer"
+  short_description: "Turn product intent into usable flows, coherent interfaces, and clear handoff."
+  brand_color: "#2E8B63"
+  default_prompt: "Use $product-visual-designer-user-flow-planning for this task."
+policy:
+  allow_implicit_invocation: true
+dependencies:
+  notes:
+    - "Optional: connect Figma only when a workflow requires it."
+    - "Optional: connect Google Drive only when a workflow requires it."

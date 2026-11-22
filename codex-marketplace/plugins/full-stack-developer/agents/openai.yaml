@@ -1,0 +1,10 @@
+interface:
+  display_name: "Full-Stack Developer"
+  short_description: "Plan, implement, debug, review, and verify production software."
+  brand_color: "#2E8B63"
+  default_prompt: "Use $full-stack-developer-technical-planning for this task."
+policy:
+  allow_implicit_invocation: true
+dependencies:
+  notes:
+    - "Optional: connect GitHub only when a workflow requires it."

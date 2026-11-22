@@ -1,0 +1,23 @@
+{
+  "name": "growth-marketer",
+  "version": "1.0.0",
+  "description": "Clarify positioning, plan campaigns, shape content, and design measurable experiments.",
+  "license": "MIT",
+  "skills": "./skills",
+  "interface": {
+    "displayName": "Growth Marketer",
+    "shortDescription": "Clarify positioning, plan campaigns, shape content, and design measurable experiments.",
+    "category": "Productivity",
+    "capabilities": [
+      "Specific positioning",
+      "Coherent campaigns",
+      "Useful content briefs",
+      "Measurable experiments"
+    ],
+    "defaultPrompt": [
+      "Create a positioning brief from these interviews and competitor pages.",
+      "Design a four-week launch campaign for this new collaboration feature."
+    ],
+    "brandColor": "#2E8B63"
+  }
+}

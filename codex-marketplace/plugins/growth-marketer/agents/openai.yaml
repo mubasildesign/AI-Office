@@ -1,0 +1,10 @@
+interface:
+  display_name: "Growth Marketer"
+  short_description: "Clarify positioning, plan campaigns, shape content, and design measurable experiments."
+  brand_color: "#2E8B63"
+  default_prompt: "Use $growth-marketer-positioning for this task."
+policy:
+  allow_implicit_invocation: true
+dependencies:
+  notes:
+    - "Optional: connect Google Drive only when a workflow requires it."

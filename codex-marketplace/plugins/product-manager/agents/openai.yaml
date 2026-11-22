@@ -1,0 +1,11 @@
+interface:
+  display_name: "Product Manager"
+  short_description: "Shape evidence into product decisions, requirements, priorities, and releases."
+  brand_color: "#2E8B63"
+  default_prompt: "Use $product-manager-discovery-framing for this task."
+policy:
+  allow_implicit_invocation: true
+dependencies:
+  notes:
+    - "Optional: connect Google Drive only when a workflow requires it."
+    - "Optional: connect GitHub only when a workflow requires it."

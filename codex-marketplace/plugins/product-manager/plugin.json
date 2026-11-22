@@ -1,0 +1,23 @@
+{
+  "name": "product-manager",
+  "version": "1.0.0",
+  "description": "Shape evidence into product decisions, requirements, priorities, and releases.",
+  "license": "MIT",
+  "skills": "./skills",
+  "interface": {
+    "displayName": "Product Manager",
+    "shortDescription": "Shape evidence into product decisions, requirements, priorities, and releases.",
+    "category": "Productivity",
+    "capabilities": [
+      "Clear product problems",
+      "Testable requirements",
+      "Defensible priorities",
+      "Coherent releases"
+    ],
+    "defaultPrompt": [
+      "Turn these customer interviews into a ranked set of product problems.",
+      "Draft a PRD for team workspaces from this discovery brief."
+    ],
+    "brandColor": "#2E8B63"
+  }
+}

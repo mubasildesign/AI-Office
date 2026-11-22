@@ -1,0 +1,10 @@
+interface:
+  display_name: "Founder’s Associate"
+  short_description: "Turn scattered context into decisions, briefs, and owned follow-through."
+  brand_color: "#2E8B63"
+  default_prompt: "Use $founders-associate-decision-brief for this task."
+policy:
+  allow_implicit_invocation: true
+dependencies:
+  notes:
+    - "Optional: connect Google Drive only when a workflow requires it."

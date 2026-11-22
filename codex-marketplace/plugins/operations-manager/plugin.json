@@ -1,0 +1,23 @@
+{
+  "name": "operations-manager",
+  "version": "1.0.0",
+  "description": "Make recurring work explicit, owned, measurable, and easier to improve.",
+  "license": "MIT",
+  "skills": "./skills",
+  "interface": {
+    "displayName": "Operations Manager",
+    "shortDescription": "Make recurring work explicit, owned, measurable, and easier to improve.",
+    "category": "Productivity",
+    "capabilities": [
+      "Usable SOPs",
+      "Visible process bottlenecks",
+      "Decision-ready status reporting",
+      "Structured vendor evaluation"
+    ],
+    "defaultPrompt": [
+      "Turn this informal customer onboarding process into an SOP.",
+      "Compare these three support vendors for our current constraints."
+    ],
+    "brandColor": "#2E8B63"
+  }
+}

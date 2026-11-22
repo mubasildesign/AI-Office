@@ -1,0 +1,10 @@
+interface:
+  display_name: "Operations Manager"
+  short_description: "Make recurring work explicit, owned, measurable, and easier to improve."
+  brand_color: "#2E8B63"
+  default_prompt: "Use $operations-manager-sop-creation for this task."
+policy:
+  allow_implicit_invocation: true
+dependencies:
+  notes:
+    - "Optional: connect Google Drive only when a workflow requires it."
