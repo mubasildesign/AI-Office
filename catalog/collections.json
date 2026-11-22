@@ -1,0 +1,15 @@
+[
+  {
+    "id": "startup-office",
+    "name": "Startup Office",
+    "description": "Six focused agents for turning an early-stage company into an operating team.",
+    "agentIds": [
+      "founders-associate",
+      "product-manager",
+      "product-visual-designer",
+      "full-stack-developer",
+      "growth-marketer",
+      "operations-manager"
+    ]
+  }
+]

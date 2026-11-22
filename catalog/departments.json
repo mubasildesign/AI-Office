@@ -1,0 +1,8 @@
+[
+  { "id": "leadership", "name": "Leadership", "description": "Turn ambiguity into decisions and owned initiatives." },
+  { "id": "product", "name": "Product", "description": "Shape evidence into requirements and priorities." },
+  { "id": "design", "name": "Design", "description": "Make product intent visible, usable, and coherent." },
+  { "id": "engineering", "name": "Engineering", "description": "Plan, build, debug, review, and verify software." },
+  { "id": "growth", "name": "Growth", "description": "Find a clear market story and test how it travels." },
+  { "id": "operations", "name": "Operations", "description": "Make recurring work explicit, measurable, and dependable." }
+]

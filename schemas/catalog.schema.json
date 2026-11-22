@@ -1,0 +1,95 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ai-office.example/schemas/catalog-1.0.0.json",
+  "title": "AI Office Catalog",
+  "type": "object",
+  "required": ["schemaVersion", "agents", "connectors", "collections", "departments"],
+  "properties": {
+    "schemaVersion": { "const": "1.0.0" },
+    "agents": { "type": "array", "items": { "$ref": "#/$defs/agent" } },
+    "connectors": { "type": "array", "items": { "$ref": "#/$defs/connector" } },
+    "collections": { "type": "array", "items": { "$ref": "#/$defs/collection" } },
+    "departments": { "type": "array", "items": { "$ref": "#/$defs/department" } }
+  },
+  "$defs": {
+    "slug": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+    "skill": {
+      "type": "object",
+      "required": ["id", "name", "description", "trigger", "inputs", "workflow", "outputs", "boundaries", "evaluations"],
+      "properties": {
+        "id": { "$ref": "#/$defs/slug" },
+        "name": { "type": "string", "minLength": 2 },
+        "description": { "type": "string", "minLength": 20 },
+        "trigger": { "type": "string", "minLength": 20 },
+        "inputs": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+        "workflow": { "type": "array", "minItems": 3, "items": { "type": "string" } },
+        "outputs": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+        "boundaries": { "type": "array", "minItems": 3, "items": { "type": "string" } },
+        "evaluations": {
+          "type": "object",
+          "required": ["direct", "indirect", "incomplete", "negative", "boundary"],
+          "properties": {
+            "direct": { "type": "string" },
+            "indirect": { "type": "string" },
+            "incomplete": { "type": "string" },
+            "negative": { "type": "string" },
+            "boundary": { "type": "string" }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "agent": {
+      "type": "object",
+      "required": ["id", "name", "shortDescription", "departmentIds", "version", "license", "roleCharter", "outcomes", "nonGoals", "requiredInputs", "connectorIds", "platforms", "verification", "releaseNotes", "examples", "skills"],
+      "properties": {
+        "id": { "$ref": "#/$defs/slug" },
+        "name": { "type": "string" },
+        "shortDescription": { "type": "string" },
+        "departmentIds": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/slug" } },
+        "accent": { "const": "emerald" },
+        "version": { "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$" },
+        "license": { "const": "MIT" },
+        "roleCharter": { "type": "string", "minLength": 80 },
+        "outcomes": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+        "nonGoals": { "type": "array", "minItems": 3, "items": { "type": "string" } },
+        "requiredInputs": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+        "connectorIds": { "type": "array", "items": { "$ref": "#/$defs/slug" } },
+        "platforms": { "type": "array", "items": { "enum": ["codex", "claude"] }, "minItems": 2, "maxItems": 2 },
+        "verification": { "type": "object" },
+        "releaseNotes": { "type": "string" },
+        "examples": { "type": "array", "minItems": 1, "items": { "type": "object", "required": ["prompt", "result"] } },
+        "skills": { "type": "array", "minItems": 4, "maxItems": 6, "items": { "$ref": "#/$defs/skill" } }
+      }
+    },
+    "connector": {
+      "type": "object",
+      "required": ["id", "name", "purpose", "capabilities", "authentication", "platforms", "optional"],
+      "properties": {
+        "id": { "$ref": "#/$defs/slug" },
+        "name": { "type": "string" },
+        "purpose": { "type": "string" },
+        "capabilities": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+        "authentication": { "type": "string" },
+        "platforms": { "type": "array", "items": { "enum": ["codex", "claude"] } },
+        "optional": { "const": true }
+      }
+    },
+    "collection": {
+      "type": "object",
+      "required": ["id", "name", "description", "agentIds"],
+      "properties": {
+        "id": { "$ref": "#/$defs/slug" },
+        "name": { "type": "string" },
+        "description": { "type": "string" },
+        "agentIds": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/slug" } }
+      }
+    },
+    "department": {
+      "type": "object",
+      "required": ["id", "name", "description"],
+      "properties": { "id": { "$ref": "#/$defs/slug" }, "name": { "type": "string" }, "description": { "type": "string" } }
+    }
+  }
+}

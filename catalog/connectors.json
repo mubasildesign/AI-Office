@@ -1,0 +1,29 @@
+[
+  {
+    "id": "figma",
+    "name": "Figma",
+    "purpose": "Read design context and create or update editable design files.",
+    "capabilities": ["Read selected files", "Inspect design systems", "Edit permitted files"],
+    "authentication": "Connect an approved Figma MCP and review its file permissions.",
+    "platforms": ["codex", "claude"],
+    "optional": true
+  },
+  {
+    "id": "github",
+    "name": "GitHub",
+    "purpose": "Inspect repositories, issues, pull requests, and release history.",
+    "capabilities": ["Read repository context", "Review issues and pull requests", "Prepare scoped changes"],
+    "authentication": "Connect GitHub with the minimum repository scope needed for the task.",
+    "platforms": ["codex", "claude"],
+    "optional": true
+  },
+  {
+    "id": "google-drive",
+    "name": "Google Drive",
+    "purpose": "Work from approved documents, spreadsheets, and presentations.",
+    "capabilities": ["Find approved files", "Read source material", "Update files with permission"],
+    "authentication": "Connect Google Drive and authorize only the files or workspace required.",
+    "platforms": ["codex", "claude"],
+    "optional": true
+  }
+]
